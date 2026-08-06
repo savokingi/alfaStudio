@@ -49,7 +49,7 @@ export default function Navbar() {
         >
           {/* Brand Logo */}
           <a href="#" className="flex items-center gap-2.5 group">
-            <img src="/logo.svg" alt="AlfaStudio Logo" className="w-8 h-8 sm:w-9 sm:h-9" />
+            <img src={`${import.meta.env.BASE_URL}logo.svg`} alt="AlfaStudio Logo" className="w-8 h-8 sm:w-9 sm:h-9" />
             <span className="bg-gradient-to-r from-white via-zinc-200 to-amber-200 bg-clip-text text-transparent font-extrabold tracking-wider text-sm sm:text-base">
               AlfaStudio
             </span>

@@ -12,7 +12,7 @@ export default function Footer() {
           {/* Бренд */}
           <div className="sm:col-span-2 space-y-4">
             <div className="flex items-center gap-2.5 text-xl font-extrabold tracking-tight">
-              <img src="/logo.svg" alt="AlfaStudio Logo" className="w-8 h-8 sm:w-9 sm:h-9" />
+              <img src={`${import.meta.env.BASE_URL}logo.svg`} alt="AlfaStudio Logo" className="w-8 h-8 sm:w-9 sm:h-9" />
               <span className="text-white">AlfaStudio</span>
             </div>
             <p className="text-zinc-500 text-xs max-w-sm leading-relaxed">
