@@ -1,0 +1,6 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <path d="M20 35 L20 75 Q20 90 35 90 Q50 90 50 75 L50 35" fill="none" stroke="#c8862e" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M80 35 L80 75 Q80 90 65 90 Q50 90 50 75 L50 35" fill="none" stroke="#c8862e" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M35 25 L35 75 Q35 85 45 85 L55 85 Q65 85 65 75 L65 25 Z" fill="black" stroke="#c8862e" stroke-width="3" stroke-linejoin="round"/>
+  <text x="50" y="70" font-family="sans-serif" font-weight="bold" font-size="45" fill="white" text-anchor="middle">A</text>
+</svg>
