@@ -4,7 +4,7 @@ import { ArrowUpRight, Play,  Zap } from 'lucide-react';
 export default function Hero() {
 
   return (
-    <section id="hero" className="relative min-h-screen pt-28 sm:pt-36 pb-16 px-4 sm:px-6 md:px-12 flex flex-col justify-between overflow-hidden subtle-grid">
+    <section id="hero" className="relative min-h-[100svh] pt-28 sm:pt-36 pb-16 px-4 sm:px-6 md:px-12 flex flex-col justify-between overflow-hidden subtle-grid">
       {/* Фоновое свечение (Aura Glows) */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] sm:w-[600px] h-[300px] sm:h-[600px] amber-glow opacity-50 pointer-events-none rounded-full" />
       <div className="absolute top-1/3 right-4 w-[250px] sm:w-[400px] h-[250px] sm:h-[400px] purple-glow opacity-30 pointer-events-none rounded-full" />

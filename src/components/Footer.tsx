@@ -1,9 +1,8 @@
 import { ArrowUp } from 'lucide-react';
+import logoUrl from '../assets/logo.svg';
+import { scrollToTop } from '../lib/scroll';
 
 export default function Footer() {
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
 
   return (
     <footer className="bg-[#030305] text-white pt-16 sm:pt-20 pb-10 sm:pb-12 px-4 sm:px-6 md:px-12 border-t border-white/10 relative overflow-hidden">
@@ -12,7 +11,7 @@ export default function Footer() {
           {/* Бренд */}
           <div className="sm:col-span-2 space-y-4">
             <div className="flex items-center gap-2.5 text-xl font-extrabold tracking-tight">
-              <img src={`${import.meta.env.BASE_URL}logo.svg`} alt="AlfaStudio Logo" className="w-8 h-8 sm:w-9 sm:h-9" />
+              <img src={logoUrl} alt="AlfaStudio Logo" width={36} height={36} className="w-8 h-8 sm:w-9 sm:h-9" />
               <span className="text-white">AlfaStudio</span>
             </div>
             <p className="text-zinc-500 text-xs max-w-sm leading-relaxed">
@@ -29,7 +28,7 @@ export default function Footer() {
               <li><a href="#services" className="hover:text-amber-400 transition-colors">Услуги</a></li>
               <li><a href="#works" className="hover:text-amber-400 transition-colors">Кейсы</a></li>
               <li><a href="#calculator" className="hover:text-amber-400 transition-colors">Калькулятор</a></li>
-              <li><a href="#pricing" className="hover:text-amber-400 transition-colors">Тарифы</a></li>
+              <li><a href="#faq" className="hover:text-amber-400 transition-colors">FAQ</a></li>
             </ul>
           </div>
 

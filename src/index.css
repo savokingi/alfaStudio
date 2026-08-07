@@ -7,6 +7,12 @@
     --card-border: rgba(255, 255, 255, 0.08);
   }
 
+  html {
+    /* Stop iOS from inflating text when the device is rotated to landscape. */
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
   body {
     background-color: var(--bg-primary);
     color: #EDEDED;
@@ -14,6 +20,13 @@
     overflow-x: hidden;
     margin: 0;
     padding: 0;
+    /* Suppress the grey flash Android/iOS paint over every tapped control. */
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Keeps headings clear of the floating navbar on direct `#id` loads. */
+  section[id] {
+    scroll-margin-top: 96px;
   }
 }
 

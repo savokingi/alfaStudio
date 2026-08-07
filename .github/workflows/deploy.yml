@@ -12,7 +12,9 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: true
+  # Never cancel a run that is mid-deploy: a cancelled deploy leaves the
+  # previously published build live, which silently strands fixes.
+  cancel-in-progress: false
 
 jobs:
   build:
